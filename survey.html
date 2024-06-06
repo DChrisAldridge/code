@@ -2,37 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Survery Form</title>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Please fill out the form below.</p>
-    <form id="survey-form">
-    <fieldset>  
-      <label id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="John Doe" required></label>
-      <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder=" name@email.com" required></label>
-      <label id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="130" placeholder="33" required></label>
+  <body style="width: 100%; height: 100vh; margin: 0; background-color: darkgreen; color: white; font-family: Tahoma; font-size: 16px;">
+    <h1 id="title" style="margin: 1em auto; text-align: center;">Survey Form</h1>
+    <p id="description" style="margin: 1em auto; text-align: center;">Please fill out the form below.</p>
+    <form id="survey-form" style=" width: 60vw; max-width: 500px; min-width: 300px; margin: 0 auto; padding-bottom: 2em;">
+    <fieldset style="border: none; padding: 2rem 0; border-bottom: 3px solid green;">  
+      <label id="name-label" style="display: block; margin: 0.5rem 0;">Enter Your Full Name: <input id="name" type="text" placeholder="John Doe" required></label>
+      <label id="email-label" style="display: block; margin: 0.5rem 0;">Enter Your Email: <input id="email" type="email" placeholder=" name@email.com" required></label>
+      <label id="number-label" style="display: block; margin: 0.5rem 0;">Enter Your Age: <input id="number" type="number" min="18" max="130" placeholder="33" required></label>
     </fieldset> 
-    <fieldset> 
-      <label for="gender-male">
+    <fieldset style="border: none; padding: 2rem 0; border-bottom: 3px solid green;"> 
+      <label for="gender-male" style="display: block; margin: 0.5rem 0;">
         <input id="gender-male" type="radio" name="gender-type" value="1" checked> Male </label>  
-      <label for="gender-female">
+      <label for="gender-female" style="display: block; margin: 0.5rem 0;">
         <input id="gender-female" type="radio" name="gender-type" value="2"> Female </label>
      </fieldset>
-     <fieldset>   
+     <fieldset style="border: none; padding: 2rem 0; border-bottom: 3px solid green;">   
       <label for="dropdown">How did you Hear About Us?</label>
       <select id="dropdown">
         <option value="">(pick an option)</option>
         <option value="1">Word Of Mouth</option>
         <option value="2">Advertisement</option>
       </select>
-      <label for="foods">Which Foods Do You Enjoy?<input class="inline" id="foods" type="checkbox" value="1" checked> Chicken Nuggets
-      <input class="inline" id="foods" type="checkbox"  value="2" > Grilled Cheese
-      <input class="inline" id="foods" type="checkbox" value="3" class="inline"> Donuts
-      <input class="inline" id="foods" type="checkbox" value="4" > Tacos
+      <label for="foods" style="display: block; margin: 0.5rem 0;">Which Foods Do You Enjoy?
+      <input class="inline" id="foods" type="checkbox" value="1" checked style="display: inline; width: unset; margin: 0 0.5em 0 0; vertical-align: middle;"> Chicken Nuggets
+      <input class="inline" id="foods" type="checkbox" value="2" style="display: inline; width: unset; margin: 0 0.5em 0 0; vertical-align: middle;"> Grilled Cheese
+      <input class="inline" id="foods" type="checkbox" value="3" style="display: inline; width: unset; margin: 0 0.5em 0 0; vertical-align: middle;"> Donuts
+      <input class="inline" id="foods" type="checkbox" value="4" style="display: inline; width: unset; margin: 0 0.5em 0 0; vertical-align: middle;"> Tacos
       </label>  
-      <label for="hobby">What Is Your Favorite Hobby?
+      <label for="hobby" style="display: block; margin: 0.5rem 0;">What Is Your Favorite Hobby?
         <textarea id="hobby" name="hobby" placeholder="My favorite hobby is..." rows="3" cols="30"></textarea>
       </fieldset>  
       </label>

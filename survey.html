@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form below.</p>
+    <form id="survey-form">
+    <fieldset>  
+      <label id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="John Doe" required></label>
+      <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder=" name@email.com" required></label>
+      <label id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="130" placeholder="33" required></label>
+    </fieldset> 
+    <fieldset> 
+      <label for="gender-male">
+        <input id="gender-male" type="radio" name="gender-type" value="1" checked> Male </label>  
+      <label for="gender-female">
+        <input id="gender-female" type="radio" name="gender-type" value="2"> Female </label>
+     </fieldset>
+     <fieldset>   
+      <label for="dropdown">How did you Hear About Us?</label>
+      <select id="dropdown">
+        <option value="">(pick an option)</option>
+        <option value="1">Word Of Mouth</option>
+        <option value="2">Advertisement</option>
+      </select>
+      <label for="foods">Which Foods Do You Enjoy?<input class="inline" id="foods" type="checkbox" value="1" checked> Chicken Nuggets
+      <input class="inline" id="foods" type="checkbox"  value="2" > Grilled Cheese
+      <input class="inline" id="foods" type="checkbox" value="3" class="inline"> Donuts
+      <input class="inline" id="foods" type="checkbox" value="4" > Tacos
+      </label>  
+      <label for="hobby">What Is Your Favorite Hobby?
+        <textarea id="hobby" name="hobby" placeholder="My favorite hobby is..." rows="3" cols="30"></textarea>
+      </fieldset>  
+      </label>
+      <input type="submit" id="submit" value"submit">
+    </form>
+  
+
+
+  </body>
+</html> 
